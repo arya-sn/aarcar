@@ -1,5 +1,33 @@
+body {
+    background-color: #191919;
+    font-family: "Nunito", sans-serif;
+    padding-top: 70px;
+}
+
 .sm-icons {
     flex-direction: row;
+}
+
+#frontDesign h1 {
+    font-weight: 100;
+    font-size: 3.5vw;
+}
+
+#frontDesign h1 span {
+    /* color: #b2b2b2; */
+    opacity: 0.75;
+}
+
+#frontDesign {
+    margin: none;
+    scrollbar-gutter: none;
+    background-color: #191919;
+}
+
+@media (max-width: 960px) {
+    #frontDesign h1 {
+        font-size: 2.5em;
+    }
 }
 
 @media only screen and (max-width: 960px) {
