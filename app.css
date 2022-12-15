@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 body {
     background-color: #191919;
     font-family: "Nunito", sans-serif;
@@ -8,14 +10,18 @@ body {
     flex-direction: row;
 }
 
+@media only screen and (max-width: 960px) {
+    .sm-icons .nav-item {
+        padding-right: 1em;
+    }
+}
+
+/* INDEX PAGE */
+
 #frontDesign h1 {
     font-weight: 100;
     font-size: 3.5vw;
-}
 
-#frontDesign h1 span {
-    /* color: #b2b2b2; */
-    opacity: 0.75;
 }
 
 #frontDesign {
@@ -30,8 +36,12 @@ body {
     }
 }
 
-@media only screen and (max-width: 960px) {
-    .sm-icons .nav-item {
-        padding-right: 1em;
-    }
+/* CONTACT US PAGE */
+
+#contact-form h1 {
+    font-size: 1.5em;
+}
+
+#contact-form h2 {
+    font-size: 1.5em;
 }
