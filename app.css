@@ -38,10 +38,16 @@ body {
 
 /* CONTACT US PAGE */
 
-#contact-form h1 {
+#contactPage h1 {
     font-size: 1.5em;
 }
 
-#contact-form h2 {
+#contactPage h2 {
     font-size: 1.5em;
+}
+
+
+#contactForm .form-control,
+#contactForm .btn {
+    border-radius: 20px;
 }
