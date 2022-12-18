@@ -47,7 +47,17 @@ body {
 }
 
 
-#contactForm .form-control,
-#contactForm .btn {
+#contactForm .form-control {
     border-radius: 20px;
+}
+
+#contactForm .btn {
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+
+#footerLinks a {
+    color: rgb(125, 125, 125);
 }
