@@ -21,7 +21,6 @@ body {
 #frontDesign h1 {
     font-weight: 100;
     font-size: 3.5vw;
-
 }
 
 #frontDesign {
@@ -54,6 +53,34 @@ body {
 #contactForm .btn {
     border-radius: 30px;
     font-size: 1.2em;
+}
+
+/* ABOUT PAGE */
+
+#aboutHeading h1 {
+    font-size: 5vw;
+}
+
+#aboutHeading h1,
+#aboutHeading h2 {
+    font-weight: 100;
+}
+
+@media (max-width: 960px) {
+    #aboutHeading h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 960px) {
+    #aboutInfo img {
+        height: 322.64px;
+    }
+}
+
+.centerBlock {
+    display: table;
+    margin: auto;
 }
 
 /* FOOTER */
