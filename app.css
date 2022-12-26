@@ -45,7 +45,6 @@ body {
     font-size: 1.5em;
 }
 
-
 #contactForm .form-control {
     border-radius: 20px;
 }
@@ -58,7 +57,10 @@ body {
 /* ABOUT PAGE */
 
 #aboutHeading h1,
-#aboutHeading h2 {
+#aboutHeading h2,
+#aboutText p,
+#aboutText h3,
+#aboutText h4 {
     font-weight: 100;
 }
 
@@ -68,6 +70,16 @@ body {
 
 #aboutHeading h2 {
     font-size: 1.5em;
+}
+
+#aboutText h3,
+#aboutText h4 {
+    margin-bottom: 3px;
+}
+
+#aboutText p {
+    line-height: 1.75;
+    font-size: 1.1em;
 }
 
 @media (min-width: 960px) {
