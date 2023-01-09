@@ -23,6 +23,11 @@ body {
     font-size: 3.5vw;
 }
 
+#frontDesign h2 {
+    font-weight: 100;
+    font-size: 2.0vw;
+}
+
 #frontDesign {
     margin: none;
     scrollbar-gutter: none;
@@ -32,6 +37,10 @@ body {
 @media (max-width: 960px) {
     #frontDesign h1 {
         font-size: 2.5em;
+    }
+
+    #frontDesign h2 {
+        font-size: 1.25em;
     }
 }
 
