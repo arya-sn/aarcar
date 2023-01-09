@@ -1,0 +1,35 @@
+body {
+    background-color: #191919;
+    font-family: "Nunito", sans-serif;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.sm-icons {
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 960px) {
+    .sm-icons .nav-item {
+        padding-right: 1em;
+    }
+}
+
+div p {
+    margin: 20px;
+    color: azure;
+}
+
+.car-cards {
+    margin: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* FOOTER  */
+
+#footerLinks a {
+    color: rgb(125, 125, 125);
+}
