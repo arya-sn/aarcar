@@ -1,7 +1,7 @@
 body {
     background-color: #191919;
     font-family: "Nunito", sans-serif;
-    padding-top: 70px;
+    padding-top: 80px;
     margin: 0 auto;
 }
 
@@ -15,17 +15,67 @@ body {
     }
 }
 
+h1 {
+    color: azure;
+    font-weight: 100;
+}
+
 div p {
     margin: 20px;
     color: azure;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.form-inputs {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* media query para sides on smaller screen */
+.car-intro {
+    padding-left: 5em;
+    padding-right: 5rem;
 }
 
 .car-cards {
     margin: 20px;
 }
 
+.card {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-text,
+.card-title,
+.card-button {
+    margin-left: 20px;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
 .card-text {
     font-size: 16px;
+    color: #191919;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.card-button {
+    background-color: rgb(200, 200, 200)
+}
+
+.carousel {
+    max-width: 300px;
+}
+
+.carousel-item {
+    max-width: 300px;
 }
 
 /* FOOTER  */
