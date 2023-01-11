@@ -32,6 +32,21 @@ div p {
     margin-right: 100px;
 }
 
+.form-inputs {
+    position: relative;
+}
+
+.form-inputs input {
+    border-radius: 30px;
+}
+
+.form-inputs i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: gray;
+}
+
 /* media query para sides on smaller screen */
 .car-intro {
     padding-left: 5em;
