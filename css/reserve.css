@@ -1,7 +1,8 @@
 /* GENERAL STYLING */
 body {
     font-family: "Nunito", sans-serif;
-    padding-top: 70px;
+    padding-top: 80px;
+    /* background-color: #e7ecef; */
 }
 
 .sm-icons {
@@ -14,18 +15,35 @@ body {
     }
 }
 
+.time-block:checked+label {
+    background-color: rgb(71, 76, 79);
+}
+
 #reserveHeading h1,
-#reserveHeading h2 {
+#reserveHeading p {
     font-weight: 100;
     color: rgb(0, 0, 0);
 }
 
-#reserveHeading h1 {
-    font-size: 3em;
+#reserveHeading p {
+    font-size: 18px;
 }
 
-#reserveHeading h2 {
-    font-size: 1.5em;
+.form-stepper {
+    width: 90%;
+}
+
+.time-block {
+    position: fixed;
+    opacity: 0;
+}
+
+.time-label {
+    width: 200px;
+}
+
+label {
+    display: block;
 }
 
 /* GITCONNECTED STYLING */

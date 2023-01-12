@@ -1,3 +1,40 @@
+let cars = [
+    {
+        carTitle: "Toyota Camry",
+        carImage: "https://picsum.photos/450/300?image=1073"
+    },
+    {
+        carTitle: "placeholder",
+        carImage: "https://picsum.photos/450/300?image=1072"
+    },
+    {
+        carTitle: "placeholder",
+        carImage: "https://picsum.photos/450/300?image=1072"
+    }
+]
+
+let htmlCode = ``;
+
+cars.forEach(function (car) {
+    htmlCode = htmlCode +
+        `<div class="card">
+            <img src="${car.carImage}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${car.carTitle}</h5>
+            </div>
+        </div>`;
+})
+
+const carCards = document.querySelector(".car-cards");
+
+carCards.innerHTML = htmlCode;
+
+// addclass = 'color';
+// $cols = $('.divs').click(function(e) {
+//     $cols.removeClass(addclass);
+//     $(this).addClass(addclass);
+// });
+
 /**
  * Define a function to navigate betweens form steps.
  * It accepts one parameter. That is - step number.

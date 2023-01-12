@@ -44,6 +44,21 @@ body {
     }
 }
 
+.featured {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.featured h1 {
+    font-weight: 100;
+    font-size: 3.5vw;
+    color: azure;
+}
+
+#homeCarousel {
+    max-width: 600px;
+}
+
 /* CONTACT US PAGE */
 
 #contactPage h1 {
@@ -66,19 +81,16 @@ body {
 /* ABOUT PAGE */
 
 #aboutHeading h1,
-#aboutHeading h2,
 #aboutText p,
 #aboutText h3,
 #aboutText h4 {
     font-weight: 100;
 }
 
-#aboutHeading h1 {
-    font-size: 3em;
-}
-
-#aboutHeading h2 {
-    font-size: 1.5em;
+#aboutHeading p {
+    color: azure;
+    font-weight: 100;
+    font-size: 18px;
 }
 
 #aboutText h3,

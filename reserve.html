@@ -30,10 +30,10 @@
                 <li class="nav-item me-auto"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item me-auto"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
             </ul>
-            <form class="form-inline ml-auto mr-2">
+            <!-- <form class="form-inline ml-auto mr-2">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
             <ul class="navbar-nav ml sm-icons">
                 <li class="nav-item me-auto ml-2"><a href="#" class="nav-link"><i
                             class="fa-brands fa-instagram fa-2x"></i></a>
@@ -49,11 +49,11 @@
     <section id="reserveHeading" class="container-fliud text-center text-white">
         <h1>RESERVE YOUR CAR</h1>
         <div class="col-lg-10 offset-lg-1">
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati in doloremque, est eos sapiente id
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati in doloremque, est eos sapiente id
                 omnis
                 enim, nam suscipit consequuntur tempore, aliquam rem fugit. Repellat iure repellendus praesentium
                 molestias
-                eos!</h2>
+                eos!</p>
         </div>
     </section>
 
@@ -68,7 +68,7 @@
                         <span class="form-stepper-circle">
                             <span>1</span>
                         </span>
-                        <div class="label">Account Basic Details</div>
+                        <div class="label">Personal Information</div>
                     </a>
                 </li>
                 <!-- Step 2 -->
@@ -77,7 +77,7 @@
                         <span class="form-stepper-circle text-muted">
                             <span>2</span>
                         </span>
-                        <div class="label text-muted">Social Profiles</div>
+                        <div class="label text-muted">Select Your Car</div>
                     </a>
                 </li>
                 <!-- Step 3 -->
@@ -86,7 +86,7 @@
                         <span class="form-stepper-circle text-muted">
                             <span>3</span>
                         </span>
-                        <div class="label text-muted">Personal Details</div>
+                        <div class="label text-muted">Date and Time Slot</div>
                     </a>
                 </li>
             </ul>
@@ -94,10 +94,40 @@
             <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
                 <!-- Step 1 Content -->
                 <section id="step-1" class="form-step">
-                    <h2 class="font-normal">Account Basic Details</h2>
+                    <h2 class="font-normal">Personal Information</h2>
                     <!-- Step 1 input fields -->
                     <div class="mt-3">
-                        Step 1 input fields goes here..
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="first">First Name</label>
+                                <input type="text" class="form-control" id="first" aria-describedby="first"
+                                    placeholder="Your first name">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="last">Last Name</label>
+                                <input type="text" class="form-control" id="last" aria-describedby="last"
+                                    placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="email"
+                                    placeholder="mail@example.com">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" id="phone" aria-describedby="last"
+                                    placeholder="(123)456-7890">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="method">Preferred Method of Contact</label>
+                            <select id="method" class="form-control">
+                                <option selected>Phone</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
@@ -105,10 +135,29 @@
                 </section>
                 <!-- Step 2 Content, default hidden on page load. -->
                 <section id="step-2" class="form-step d-none">
-                    <h2 class="font-normal">Social Profiles</h2>
+                    <h2 class="font-normal">Select Your Car</h2>
                     <!-- Step 2 input fields -->
                     <div class="mt-3">
-                        Step 2 input fields goes here..
+                        <div id="carCards" class="card-deck car-cards">
+                            <!-- <div class="card">
+                                <img src="https://picsum.photos/450/300?image=1072" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://picsum.photos/450/300?image=1072" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://picsum.photos/450/300?image=1072" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
@@ -117,14 +166,44 @@
                 </section>
                 <!-- Step 3 Content, default hidden on page load. -->
                 <section id="step-3" class="form-step d-none">
-                    <h2 class="font-normal">Personal Details</h2>
+                    <h2 class="font-normal">Date and Time Slot</h2>
                     <!-- Step 3 input fields -->
                     <div class="mt-3">
-                        Step 3 input fields goes here..
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy">
+                        </div>
+
+                        <div class="text-center">
+                            <input type="radio" class="btn-check time-block" name="options" id="option1"
+                                autocomplete="off" checked />
+                            <label class="btn btn-secondary time-label mr-3" for="option1">8:00AM - 10:00AM</label>
+
+                            <input type="radio" class="btn-check time-block" name="options" id="option2"
+                                autocomplete="off" />
+                            <label class="btn btn-secondary time-label mx-3" for="option2">10:00AM - 12:00PM</label>
+
+                            <input type="radio" class="btn-check time-block" name="options" id="option3"
+                                autocomplete="off" />
+                            <label class="btn btn-secondary time-label mx-3" for="option3">12:00PM - 2:00PM</label>
+                        </div>
+                        <div class="text-center">
+                            <input type="radio" class="btn-check time-block" name="options" id="option4"
+                                autocomplete="off" />
+                            <label class="btn btn-secondary time-label mr-3" for="option4">2:00PM - 4:00PM</label>
+
+                            <input type="radio" class="btn-check time-block" name="options" id="option5"
+                                autocomplete="off" />
+                            <label class="btn btn-secondary time-label mx-3" for="option5">4:00PM - 6:00PM</label>
+
+                            <input type="radio" class="btn-check time-block" name="options" id="option6"
+                                autocomplete="off" />
+                            <label class="btn btn-secondary time-label mx-3" for="option6">6:00PM - 8:00PM</label>
+                        </div>
                     </div>
                     <div class="mt-3">
                         <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
-                        <button class="button submit-btn" type="submit">Save</button>
+                        <button class="button submit-btn" type="submit">Submit</button>
                     </div>
                 </section>
             </form>
@@ -134,12 +213,12 @@
     <!-- FOOTER -->
     <footer class="d-xl-flex flex-lg-row-reverse align-items-center bg-light text-center footer-light sticky-bottom">
         <section class="d-flex flex-wrap p-3 align-items-center">
-            <div class="mr-auto pr-2">
+            <!-- <div class="mr-auto pr-2">
                 <form class="form-inline ml-auto">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
                 </form>
-            </div>
+            </div> -->
             <div class="ml-auto">
                 <span class="d-xl-none">Get connect with us on social networks: </span>
                 <a href="" class="btn btn-outline-dark btn-floating m-1" role="button">
