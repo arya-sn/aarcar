@@ -27,7 +27,7 @@ cars.forEach(function (car) {
     // }
     htmlCode = htmlCode +
         `   
-            <div id="carCard" class="carCard card col-xl-6">
+            <div id="carCard" class="carCard card">
                 <div class="row d-flex mx-0">
                     <div id="CarouselTest" class="carousel slide" data-interval="false">
                         <ol class="carousel-indicators">

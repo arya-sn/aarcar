@@ -18,29 +18,33 @@ body {
 
 /* INDEX PAGE */
 
-#frontDesign h1 {
+#frontDesign div h1 {
     font-weight: 100;
     font-size: 3.5vw;
 }
 
-#frontDesign h2 {
+#frontDesign div h2 {
     font-weight: 100;
     font-size: 2.0vw;
 }
 
-#frontDesign {
+#frontDesign div {
     margin: none;
     scrollbar-gutter: none;
     background-color: #191919;
 }
 
-@media (max-width: 960px) {
-    #frontDesign h1 {
+@media (max-width: 991px) {
+    #frontDesign div h1 {
         font-size: 2.5em;
     }
 
-    #frontDesign h2 {
+    #frontDesign div h2 {
         font-size: 1.25em;
+    }
+
+    #frontDesign div img {
+        max-width: 600px;
     }
 }
 
@@ -80,10 +84,7 @@ body {
 
 /* ABOUT PAGE */
 
-#aboutHeading h1,
-#aboutText p,
-#aboutText h3,
-#aboutText h4 {
+#aboutHeading h1 {
     font-weight: 100;
 }
 
@@ -91,23 +92,6 @@ body {
     color: azure;
     font-weight: 100;
     font-size: 18px;
-}
-
-#aboutText h3,
-#aboutText h4 {
-    margin-bottom: 3px;
-}
-
-#aboutText p {
-    line-height: 1.75;
-    font-size: 1.1em;
-}
-
-@media (min-width: 960px) {
-    #aboutInfo img {
-        height: 322.64px;
-        width: 464.48px;
-    }
 }
 
 .centerBlock {
@@ -119,4 +103,28 @@ body {
 
 #footerLinks a {
     color: rgb(125, 125, 125);
+}
+
+.about-info,
+.about-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-info {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.about-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+@media (min-width: 991px) {
+    .about-info {
+        min-width: 750px;
+    }
 }

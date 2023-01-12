@@ -2,7 +2,7 @@
 body {
     font-family: "Nunito", sans-serif;
     padding-top: 80px;
-    /* background-color: #e7ecef; */
+    background-color: #191919;
 }
 
 .sm-icons {
@@ -22,7 +22,7 @@ body {
 #reserveHeading h1,
 #reserveHeading p {
     font-weight: 100;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 #reserveHeading p {
@@ -95,7 +95,7 @@ h2 {
 }
 
 .form-step {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 3rem;
 }
@@ -167,7 +167,7 @@ ul.form-stepper>li:not(:last-of-type) {
 }
 
 .form-stepper-horizontal li:after {
-    background-color: #dee2e6;
+    background-color: #000000;
 }
 
 .form-stepper-horizontal li.form-stepper-completed:after {
@@ -185,7 +185,7 @@ ul.form-stepper li a .form-stepper-circle {
     margin-right: 0;
     line-height: 1.7rem;
     text-align: center;
-    background: rgba(0, 0, 0, 0.38);
+    background: rgba(255, 255, 255, 0.38);
     border-radius: 50%;
 }
 
@@ -236,6 +236,14 @@ ul.form-stepper li a .form-stepper-circle {
 
 .form-stepper a {
     cursor: default;
+}
+
+.personal-info {
+    color: white;
+}
+
+h2 {
+    color: white;
 }
 
 /* FOOTER */
