@@ -5,6 +5,10 @@ body {
     margin: 0 auto;
 }
 
+nav {
+    background-color: white;
+}
+
 .sm-icons {
     flex-direction: row;
 }

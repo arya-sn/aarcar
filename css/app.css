@@ -6,6 +6,11 @@ body {
     padding-top: 70px;
 }
 
+nav {
+    background-color: white;
+
+}
+
 .sm-icons {
     flex-direction: row;
 }
