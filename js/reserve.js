@@ -1,21 +1,32 @@
 let cars = [
     {
+        id: 1,
         carTitle: "Toyota Camry",
-        carImage: "https://picsum.photos/450/300?image=1073"
+        carImage: "img/car/full/camry.png"
     },
     {
-        carTitle: "placeholder",
-        carImage: "https://picsum.photos/450/300?image=1072"
+        id: 2,
+        carTitle: "Nissan Altima",
+        carImage: "img/car/full/altima.png"
     },
     {
-        carTitle: "placeholder",
-        carImage: "https://picsum.photos/450/300?image=1072"
+        id: 3,
+        carTitle: "Honda Civic",
+        carImage: "img/car/full/civic.png"
+    },
+    {
+        id: 4,
+        carTitle: "Jeep Wrangler",
+        carImage: "img/car/full/wrangler.png"
     }
 ]
 
 let htmlCode = ``;
 
 cars.forEach(function (car) {
+    if (car.id % 2 == 1) {
+        htmlCode = htmlCode + `<div id="carCards" class="card-deck car-cards">`
+    }
     htmlCode = htmlCode +
         `<div class="card">
             <img src="${car.carImage}" class="card-img-top" alt="...">
@@ -23,9 +34,12 @@ cars.forEach(function (car) {
                 <h5 class="card-title">${car.carTitle}</h5>
             </div>
         </div>`;
+    if (car.id % 2 == 0) {
+        htmlCode = htmlCode + `</div>`
+    }
 })
 
-const carCards = document.querySelector(".car-cards");
+const carCards = document.querySelector("#carCards");
 
 carCards.innerHTML = htmlCode;
 
