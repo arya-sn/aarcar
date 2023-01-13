@@ -250,7 +250,28 @@ h2 {
     color: white;
 }
 
+.highlight {
+    background: rgb(176, 176, 176);
+}
+
+.dateInput label {
+    color: #fff;
+}
+
+.timeInput p {
+    text-align: start;
+    color: #fff
+}
+
+
 /* FOOTER */
+
+footer section div div div h6,
+footer section div div div p,
+footer section div div div p a,
+p {
+    color: black;
+}
 
 #footerLinks a {
     color: rgb(125, 125, 125);

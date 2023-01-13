@@ -121,3 +121,14 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
         navigateToFormStep(stepNumber);
     });
 });
+
+$(document).ready(function () {
+
+    $Divs = $(".card");
+
+    $Divs.click(function () {
+        $Divs.removeClass("highlight");
+        $(this).addClass("highlight");
+
+    });
+});

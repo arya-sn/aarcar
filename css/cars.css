@@ -103,3 +103,10 @@ div p {
 #footerLinks a {
     color: rgb(125, 125, 125);
 }
+
+footer section div div div h6,
+footer section div div div p,
+footer section div div div p a,
+p {
+    color: black;
+}
