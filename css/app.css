@@ -140,3 +140,15 @@ p {
         min-width: 750px;
     }
 }
+
+.about-info p {
+    color: white !important;
+
+}
+
+/* 
+.avika {
+    border-width: 5px;
+    border-top: #ffffff;
+    border-bottom: #ffffff;
+} */
