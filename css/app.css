@@ -99,9 +99,17 @@ nav {
     font-size: 18px;
 }
 
-.centerBlock {
-    display: table;
-    margin: auto;
+.whole-about {
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 50px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+.whole-about:nth-of-type(1) {
+    margin-top: 0px;
 }
 
 /* FOOTER */
@@ -145,10 +153,3 @@ p {
     color: white !important;
 
 }
-
-/* 
-.avika {
-    border-width: 5px;
-    border-top: #ffffff;
-    border-bottom: #ffffff;
-} */
