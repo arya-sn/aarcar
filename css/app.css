@@ -87,6 +87,11 @@ nav {
     font-size: 1.2em;
 }
 
+#checkMark {
+    width: 200px;
+    height: 200px;
+}
+
 /* ABOUT PAGE */
 
 #aboutHeading h1 {

@@ -93,10 +93,10 @@ $('#calc-btn').on('click', function (event) {
     calculations.tInterest = calculations.total - calculations.tLoan;
     console.log(calculations);
 
-    htmlCode2 = `<p class="text-white">Your Total Loan Amount = ${calculations.tLoan.toFixed(2)}</p>
-    <p class="text-white">Your Total Interest Amount = ${calculations.tInterest.toFixed(2)}</p>
-    <p class="text-white">Your Total Loan and Total Interest Amount = ${calculations.total.toFixed(2)}</p>
-    <p class="text-white">Your Total Monthly Payment = ${calculations.monthly.toFixed(2)}</p>`;
+    htmlCode2 = `<p class="text-white">Total Loan Amount = ${calculations.tLoan.toFixed(2)}</p>
+    <p class="text-white">Total Interest Amount = ${calculations.tInterest.toFixed(2)}</p>
+    <p class="text-white">Total Loan and Total Interest Amount = ${calculations.total.toFixed(2)}</p>
+    <p class="text-white">Total Monthly Payment = ${calculations.monthly.toFixed(2)}</p>`;
 
     document.querySelector(".car-calculations").innerHTML = htmlCode2;
 
