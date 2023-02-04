@@ -78,6 +78,7 @@ cars.forEach(function (car) {
                         <h4 id="cardTitle" class="card-title"> ${car.title}</h4>
                         <p class="card-text car-price">Price: ${car.price}</p>
                         <p class="card-text car-info">Color: ${car.color}</p>
+                        <a href="vehicle-details.html?id=${car.id}" class="mt-auto btn card-button">Get Info</a>
                         <a href="reserve.html" class="mt-auto btn card-button">Make a Reservation</a>
                     </section> 
                 </div>
