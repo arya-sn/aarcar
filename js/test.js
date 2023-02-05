@@ -1,13 +1,13 @@
-var calendarNode = document.querySelector("#calendar");
+let calendarNode = document.querySelector("#calendar");
 
-var currDate = new Date();
-var currYear = currDate.getFullYear();
-var currMonth = currDate.getMonth() + 1;
+let currDate = new Date();
+let currYear = currDate.getFullYear();
+let currMonth = currDate.getMonth() + 1;
 
-var selectedYear = currYear;
-var selectedMonth = currMonth;
-var selectedMonthName = getMonthName(selectedYear, selectedMonth);
-var selectedMonthDays = getDayCount(selectedYear, selectedMonth);
+let selectedYear = currYear;
+let selectedMonth = currMonth;
+let selectedMonthName = getMonthName(selectedYear, selectedMonth);
+let selectedMonthDays = getDayCount(selectedYear, selectedMonth);
 
 renderDOM(selectedYear, selectedMonth);
 
@@ -163,7 +163,7 @@ $(".timetable_container").click(function (e) {
         if ((selectedMonth + "").length == 1) {
             selectedMonth = "0" + selectedMonth;
         }
-        var selectedDateByUser =
+        let selectedDateByUser =
             selectedYear + "-" + selectedMonth + "-" + selectedDay;
         // alert(selectedDateByUser)
         $("input#date").val(selectedDateByUser);
