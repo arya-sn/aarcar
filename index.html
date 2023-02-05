@@ -23,7 +23,7 @@ photos from UnSplash or other non-copyright
 <body>
 
     <!--NAVIGATION BAR-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top px-3 container-fliud">
+    <nav id="navbar" class="navbar navbar-expand-lg shadow fixed-top px-3 container-fliud">
         <a class="navbar-brand py-0" href="index.html">
             <img class="mr-3" src="img/logo.png" alt="" width="40" height="40">AARC
         </a>
@@ -39,10 +39,6 @@ photos from UnSplash or other non-copyright
                 <li class="nav-item me-auto"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item me-auto"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
             </ul>
-            <!-- <form class="form-inline ml-auto mr-2">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
             <ul class="navbar-nav ml-auto sm-icons">
                 <li class="nav-item me-auto ml-2"><a href="https://www.instagram.com/eaganhighschool/"
                         class="nav-link"><i class="fa-brands fa-instagram fa-2x"></i></a>
@@ -57,7 +53,7 @@ photos from UnSplash or other non-copyright
     <!--FRONT PAGE DESIGN-->
     <section class="container-fluid px-0">
         <div id="frontDesign" class="row align-items-center mx-0">
-            <div class="text-white d-lg-block mx-0 col-lg-6 text-center px-0">
+            <div class="d-lg-block mx-0 col-lg-6 text-center px-0">
                 <h1 class="">AAR<span>CAR</span></h1>
                 <h2>The arc between you and your dream car.</h2>
             </div>
@@ -68,7 +64,7 @@ photos from UnSplash or other non-copyright
     </section>
 
     <section class="container-fliud px-0 text-center featured">
-        <h1 class="my-3">FEATURED</h1>
+        <h1 id="featured" class="my-3">FEATURED</h1>
         <div id="homeCarousel" class="carousel slide mx-auto" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -93,28 +89,27 @@ photos from UnSplash or other non-copyright
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white" style="background-color: #fdfafa">
-        <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+    <footer class="text-center text-lg-start">
+        <section id="footerBanner" class="d-flex justify-content-between p-4">
             <div class="me-5">
                 <span>Get connected with us on social networks:</span>
             </div>
             <div>
-                <a href="https://twitter.com/EaganHighSchool" class="text-white me-4">
+                <a href="https://twitter.com/EaganHighSchool" class="me-4">
                     <i class="fab fa-twitter"></i>
                 </a>
 
-                <a href="https://www.instagram.com/eaganhighschool/" class="text-white me-4">
+                <a href="https://www.instagram.com/eaganhighschool/" class="me-4">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </section>
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold">AARCAR</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
                             Aarcar is devoted to helping you find your path to your dream car.
                         </p>
@@ -123,24 +118,23 @@ photos from UnSplash or other non-copyright
                             <!-- Links
                             <h6 class="text-uppercase fw-bold">Products</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                             />
                             <p>
-                                <a href="#!" class="text-white">MDBootstrap</a>
+                                <a href="#!" class="">MDBootstrap</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-white">MDWordPress</a>
+                                <a href="#!" class="">MDWordPress</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-white">BrandFlow</a>
+                                <a href="#!" class="">BrandFlow</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-white">Bootstrap Angular</a>
+                                <a href="#!" class="">Bootstrap Angular</a>
                             </p>
                         </div> -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold">Useful links</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
                             <a href="index.html">Home</a>
                         </p>
@@ -162,8 +156,7 @@ photos from UnSplash or other non-copyright
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold">Contact</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p><i class="fas fa-home mr-3"></i> Eagan, MN 55123, US</p>
                         <p><i class="fas fa-envelope mr-3"></i> aarcar@gmail.com</p>
                         <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
@@ -176,7 +169,7 @@ photos from UnSplash or other non-copyright
             <!-- Copyright
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                <a class="" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
             Copyright -->
     </footer>
