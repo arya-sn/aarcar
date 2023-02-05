@@ -19,6 +19,7 @@ body {
 h1,
 p,
 h2,
+label,
 #featured {
     color: var(--dblue);
 }
@@ -91,7 +92,6 @@ nav {
 .featured h1 {
     font-weight: 100;
     font-size: 3.5vw;
-    color: #f0ffff;
 }
 
 #homeCarousel {
@@ -115,12 +115,14 @@ nav {
 #contactForm .btn {
     border-radius: 30px;
     font-size: 1.2em;
+    border-color: var(--dblue);
+    color: var(--dblue);
 }
 
-#checkMark {
+/* #checkMark {
     width: 200px;
     height: 200px;
-}
+} */
 
 /* ABOUT PAGE */
 
@@ -129,7 +131,6 @@ nav {
 }
 
 #aboutHeading p {
-    color: azure;
     font-weight: 100;
     font-size: 18px;
 }
