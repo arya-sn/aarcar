@@ -2,8 +2,9 @@
 
 :root {
     --dblue: rgb(40, 63, 104);
+    --darkerblue: rgb(127, 151, 193);
     /* --bblue: rgb(76, 168, 223); */
-    --dgblue: rgb(154, 185, 241);
+    --dgblue: rgb(176, 198, 239);
     --offwhite: rgb(230, 238, 251);
     --white: rgb(249, 251, 254);
     --gray: rgb(94, 110, 135);
@@ -151,7 +152,7 @@ nav {
 /* FOOTER */
 
 footer {
-    background-color: var(--offwhite);
+    background-color: var(--dgblue);
 }
 
 #footerBanner {
@@ -179,7 +180,7 @@ p,
 }
 
 footer section div div div p a:hover {
-    color: var(--dblue);
+    color: var(--offwhite);
 }
 
 /* 
