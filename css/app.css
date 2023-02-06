@@ -9,6 +9,7 @@
     --white: rgb(249, 251, 254);
     --gray: rgb(94, 110, 135);
     --lblue: rgb(192, 203, 229);
+    --green: rgb(79, 159, 112);
 }
 
 body {
@@ -152,11 +153,11 @@ nav {
 /* FOOTER */
 
 footer {
-    background-color: var(--dgblue);
+    background-color: var(--dblue);
 }
 
 #footerBanner {
-    background-color: var(--dblue);
+    background-color: var(--green);
 }
 
 #footerBanner div span,
@@ -166,7 +167,7 @@ footer {
 
 hr {
     width: 60px;
-    background-color: var(--dblue);
+    background-color: var(--offwhite);
     height: 2px;
 }
 
@@ -176,7 +177,7 @@ footer section div div div p a,
 p,
 #footerLinks a {
     /* color: rgb(125, 125, 125); */
-    color: var(--dblue);
+    color: var(--offwhite);
 }
 
 footer section div div div p a:hover {
