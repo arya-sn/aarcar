@@ -1,14 +1,17 @@
 /* GENERAL STYLING */
 
 :root {
+    /* */
     --dblue: rgb(40, 63, 104);
-    --darkerblue: rgb(127, 151, 193);
-    /* --bblue: rgb(76, 168, 223); */
+    --bblue: rgb(76, 168, 223);
     --dgblue: rgb(176, 198, 239);
+    /* */
     --offwhite: rgb(230, 238, 251);
     --white: rgb(249, 251, 254);
     --gray: rgb(94, 110, 135);
+    /* */
     --lblue: rgb(192, 203, 229);
+    /* */
     --green: #1b746a;
 }
 
@@ -86,6 +89,14 @@ nav {
     }
 }
 
+.divider {
+    height: 2px;
+    width: 85%;
+    margin: auto;
+    background-color: var(--dblue);
+    margin-top: 30px;
+}
+
 .featured {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -137,6 +148,29 @@ nav {
     font-size: 18px;
 }
 
+.about-info,
+.about-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-info {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.about-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+@media (min-width: 1053px) {
+    .about-info {
+        min-width: 750px;
+    }
+}
+
 .whole-about {
     border: 1px solid rgb(48, 47, 47);
     border-radius: 50px;
@@ -174,7 +208,6 @@ hr {
 footer section div div div h6,
 footer section div div div p,
 footer section div div div p a,
-p,
 #footerLinks a {
     /* color: rgb(125, 125, 125); */
     color: var(--offwhite);
@@ -191,35 +224,6 @@ footer section div div div p a,
 p {
     color: black;
 } */
-
-.about-info,
-.about-img {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.about-info {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.about-img img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-
-@media (min-width: 1053px) {
-    .about-info {
-        min-width: 750px;
-    }
-}
-
-.about-info p {
-    color: white !important;
-
-}
 
 .carousel {
     max-width: 600px;
