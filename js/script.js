@@ -38,6 +38,33 @@ const cars = [
         price: '$22,500',
         fullURL: 'img/car/full/wrangler.png',
         interiorURL: 'img/car/interior/wrangler.png'
+    },
+    {
+        id: 5,
+        htmlID: 'skyline',
+        title: '2017 Nissan Skyline GT-R',
+        color: 'Black',
+        price: '$22,500',
+        fullURL: 'img/car/full/skyline.jpeg',
+        interiorURL: 'img/car/interior/skyline.jpeg'
+    },
+    {
+        id: 6,
+        htmlID: 'tacoma',
+        title: '2016 Toyota Tacoma TRD',
+        color: 'Red',
+        price: '$22,500',
+        fullURL: 'img/car/full/tacoma.jpeg',
+        interiorURL: 'img/car/interior/tacoma.jpeg'
+    },
+    {
+        id: 7,
+        htmlID: 'titanium',
+        title: '2017 Ford Escape Titanium',
+        color: 'Orange',
+        price: '$22,500',
+        fullURL: 'img/car/full/titanium.jpg',
+        interiorURL: 'img/car/interior/titanium.jpeg'
     }
 ]
 

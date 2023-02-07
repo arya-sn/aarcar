@@ -18,6 +18,24 @@ const cars = [
         id: 4,
         carTitle: "Jeep Wrangler",
         carImage: "img/car/full/wrangler.png"
+    },
+    {
+        id: 5,
+        htmlID: 'skyline',
+        carTitle: '2017 Nissan Skyline GT-R',
+        carImage: 'img/car/full/skyline.jpeg'
+    },
+    {
+        id: 6,
+        htmlID: 'tacoma',
+        carTitle: '2016 Toyota Tacoma TRD',
+        carImage: 'img/car/full/tacoma.jpeg'
+    },
+    {
+        id: 7,
+        htmlID: 'titanium',
+        carTitle: '2017 Ford Escape Titanium',
+        carImage: 'img/car/full/titanium.jpg'
     }
 ]
 

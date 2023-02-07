@@ -26,6 +26,27 @@ const cars = [
         htmlID: "wrangler",
         price: 22500,
         strPrice: "$22,500"
+    },
+    {
+        id: 5,
+        htmlID: 'skyline',
+        title: '2017 Nissan Skyline GT-R',
+        price: 22500,
+        strPrice: '$22,500'
+    },
+    {
+        id: 6,
+        htmlID: 'tacoma',
+        title: '2016 Toyota Tacoma TRD',
+        price: 22500,
+        strPrice: '$22,500'
+    },
+    {
+        id: 7,
+        htmlID: 'titanium',
+        title: '2017 Ford Escape Titanium',
+        price: 22500,
+        strPrice: '$22,500'
     }
 ]
 
