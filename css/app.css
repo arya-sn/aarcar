@@ -10,15 +10,20 @@
     --white: rgb(249, 251, 254);
     --gray: rgb(94, 110, 135);
     /* */
-    --lblue: rgb(231, 239, 249);
+    --lblue: rgb(169, 217, 235);
     /* */
-    --green: #1b746a;
+    /* --green: #1b746a; */
+    --green: rgb(22, 127, 169);
 }
 
 body {
     background-color: var(--lblue);
-    font-family: "Nunito", sans-serif;
-    padding-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+}
+
+.row {
+    margin: 0;
 }
 
 h1,
@@ -115,10 +120,12 @@ nav {
 
 #contactPage h1 {
     font-size: 1.5em;
+    font-weight: 300;
 }
 
 #contactPage h2 {
     font-size: 1.5em;
+    font-weight: 300;
 }
 
 #contactForm .form-control {
@@ -140,11 +147,11 @@ nav {
 /* ABOUT PAGE */
 
 #aboutHeading h1 {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #aboutHeading p {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -156,7 +163,7 @@ nav {
 
 .about-info {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .about-img img {
