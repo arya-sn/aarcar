@@ -299,6 +299,15 @@ car-card {
     height: 330px;
 }
 
+.personal-info div div input,
+.personal-info div select {
+    border-radius: 100px;
+}
+
+.preferred {
+    padding-right: 16px;
+    padding-left: 16px;
+}
 
 /* FOOTER */
 

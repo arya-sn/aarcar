@@ -86,12 +86,19 @@ nav {
 }
 
 #calcBtn {
-    overflow: visible !important;
-    background-color: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background-color: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background-color: -ms-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background-color: -o-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background-color: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* flex: 1 1 auto; */
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px var(--lblue);
+    border-radius: 100px;
+    background-image: linear-gradient(to right, var(--dblue) 0%, rgb(33, 175, 210) 51%, var(--dblue) 100%);
+}
+
+#calcBtn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
 }
 
 .divider {

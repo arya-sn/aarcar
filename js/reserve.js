@@ -1,40 +1,44 @@
 const cars = [
     {
         id: 1,
+        htmlID: 'camry',
         carTitle: "Toyota Camry",
         carImage: "img/car/full/camry.png"
     },
     {
         id: 2,
-        carTitle: "Nissan Altima",
+        htmlID: 'altima',
+        carTitle: "Nissan Altima S",
         carImage: "img/car/full/altima.png"
     },
     {
         id: 3,
-        carTitle: "Honda Civic",
-        carImage: "img/car/full/civic.jpg"
+        htmlID: 'civic',
+        carTitle: "Honda Civic Type R",
+        carImage: "img/car/full/civic.png"
     },
     {
         id: 4,
+        htmlID: 'wrangler',
         carTitle: "Jeep Wrangler",
         carImage: "img/car/full/wrangler.png"
     },
     {
         id: 5,
         htmlID: 'skyline',
-        carTitle: '2017 Nissan Skyline GT-R',
+        carTitle: 'Nissan Skyline GT-R',
         carImage: 'img/car/full/skyline.jpeg'
     },
     {
         id: 6,
         htmlID: 'tacoma',
-        carTitle: '2016 Toyota Tacoma TRD',
+        carTitle: 'Toyota Tacoma TRD',
         carImage: 'img/car/full/tacoma.png'
     },
     {
         id: 7,
         htmlID: 'titanium',
-        carTitle: '2017 Ford Escape Titanium',
+        carTitle: 'Ford Escape Titanium',
         carImage: 'img/car/full/titanium.jpg'
     }
 ]

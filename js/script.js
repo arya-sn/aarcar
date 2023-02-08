@@ -7,7 +7,7 @@ const cars = [
         id: 1,
         htmlID: 'camry',
         title: '2018 Toyota Camry',
-        color: 'Black',
+        color: 'White',
         price: '$22,000',
         fullURL: 'img/car/full/camry.png',
         interiorURL: 'img/car/interior/camry.jpg'
@@ -15,8 +15,8 @@ const cars = [
     {
         id: 2,
         htmlID: 'altima',
-        title: '2015 Nissan Altima',
-        color: 'Black',
+        title: '2015 Nissan Altima S',
+        color: 'White',
         price: '$15,500',
         fullURL: 'img/car/full/altima.png',
         interiorURL: 'img/car/interior/altima.jpg'
@@ -24,10 +24,10 @@ const cars = [
     {
         id: 3,
         htmlID: 'civic',
-        title: '2022 Honda Civic',
-        color: 'Black',
-        price: '$22,500',
-        fullURL: 'img/car/full/civic.jpg',
+        title: '2022 Honda Civic Type R',
+        color: 'Red',
+        price: '$52,500',
+        fullURL: 'img/car/full/civic.png',
         interiorURL: 'img/car/interior/civic.jpeg'
     },
     {
@@ -52,7 +52,7 @@ const cars = [
         id: 6,
         htmlID: 'tacoma',
         title: '2016 Toyota Tacoma TRD',
-        color: 'Red',
+        color: 'Tan',
         price: '$25,000',
         fullURL: 'img/car/full/tacoma.png',
         interiorURL: 'img/car/interior/tacoma.jpeg'
