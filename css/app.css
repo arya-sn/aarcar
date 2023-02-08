@@ -2,7 +2,7 @@
 
 :root {
     /* */
-    --dblue: rgb(40, 63, 104);
+    --dblue: rgb(40, 63, 103);
     --bblue: rgb(76, 168, 223);
     --dgblue: rgb(176, 198, 239);
     /* */
@@ -36,7 +36,6 @@ label,
 
 nav {
     background-color: var(--dblue);
-
 }
 
 .navbar-brand,

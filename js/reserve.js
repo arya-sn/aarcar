@@ -42,17 +42,17 @@ const cars = [
 let htmlCode = ``;
 
 cars.forEach(function (car) {
-    if (car.id % 2 == 1) {
-        htmlCode = htmlCode + `<div id="carCards" class="card-deck car-cards">`
+    if (car.id % 7 == 1) {
+        htmlCode = htmlCode + `<div id="carCards" class="car-cards row">`
     }
     htmlCode = htmlCode +
-        `<div class="card">
+        `<div class="card car-card col-12 col-lg-4 col-sm-6 p-3" style="width: 18rem;">
             <img src="${car.carImage}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${car.carTitle}</h5>
             </div>
         </div>`;
-    if (car.id % 2 == 0) {
+    if (car.id % 7 == 0) {
         htmlCode = htmlCode + `</div>`
     }
 })

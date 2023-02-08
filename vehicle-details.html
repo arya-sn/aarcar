@@ -23,7 +23,7 @@
 <body>
 
     <!--NAVIGATION BAR-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow fixed-top px-3 container-fliud">
+    <nav id="navbar" class="navbar navbar-expand-lg shadow fixed-top px-3 container-fliud">
         <a class="navbar-brand py-0" href="index.html">
             <img class="mr-3" src="img/logo.png" alt="" width="40" height="40">AARC
         </a>
@@ -35,19 +35,14 @@
                 <li class="nav-item me-auto"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item me-auto"><a href="cars.html" class="nav-link">Cars</a></li>
                 <li class="nav-item me-auto"><a href="reserve.html" class="nav-link">Reserve</a></li>
-                <li class="nav-item me-auto"><a href="calc.html" class="nav-link">Price Calculator</a></li>
                 <li class="nav-item me-auto"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item me-auto"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
             </ul>
-            <!-- <form class="form-inline ml-auto mr-2">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
             <ul class="navbar-nav ml-auto sm-icons">
-                <li class="nav-item me-auto ml-2"><a href="https://www.instagram.com/eaganhighschool/"
-                        class="nav-link"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <li class="nav-item me-auto ml-2"><a href="https://www.instagram.com/aarcarbpa/" class="nav-link"><i
+                            class="fa-brands fa-instagram fa-2x"></i></a>
                 </li>
-                <li class="nav-item me-auto ml-2"><a href="https://twitter.com/EaganHighSchool" class="nav-link"><i
+                <li class="nav-item me-auto ml-2"><a href="https://twitter.com/aarcar_bpa" class="nav-link"><i
                             class="fa-brands fa-twitter fa-2x"></i></a>
                 </li>
             </ul>
@@ -56,7 +51,7 @@
 
     <!-- <h1 class="car-title text-white"></h1> -->
 
-    <div class="container-fliud">
+    <div class="container-fluid">
         <div class="row">
             <!--Carousel-->
             <section class="col-md-6 mx-0 p-3">
@@ -79,10 +74,13 @@
             </section>
             <!--Title info-->
             <section class="col-md-6 text-white align-items-center">
-                <div class="d-flex justify-content-between my-4 mx-3 main-info"></div>
+                <div class="my-4 mx-3 main-info"></div>
             </section>
         </div>
     </div>
+
+    <section class="divider"></section>
+
     <div class="row container-fluid">
         <div class="col-lg-6 text-center text-white" id="highlights"></div>
         <!--USER INPUT-->
@@ -107,7 +105,7 @@
                 <!-- <div class="car-checkboxes px-3 text-left"></div> -->
             </div>
             <div class="text-left col-6">
-                <button type="button" id="calc-btn" class="btn btn-outline-light my-2 mx-3 calc-btn">Calculate</button>
+                <button type="button" id="calc-btn" class="btn btn-outline-light my-2 calc-btn">Calculate</button>
             </div>
 
             <!--CALCULATED RESULTS-->
@@ -117,36 +115,34 @@
 
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white" style="background-color: #fdfafa">
-        <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+    <footer class="text-center text-lg-start">
+        <section id="footerBanner" class="d-flex justify-content-between p-4">
             <div class="me-5">
                 <span>Get connected with us on social networks:</span>
             </div>
             <div>
-                <a href="https://twitter.com/EaganHighSchool" class="text-white me-4">
+                <a href="https://twitter.com/aarcar_bpa" class="me-4">
                     <i class="fab fa-twitter"></i>
                 </a>
 
-                <a href="https://www.instagram.com/eaganhighschool/" class="text-white me-4">
+                <a href="https://www.instagram.com/aarcarbpa/" class="me-4">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </section>
-        <section class="">
+        <section>
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-3">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold">AARCAR</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
                             Aarcar is devoted to helping you find your path to your dream car.
                         </p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold">Useful links</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p>
                             <a href="index.html">Home</a>
                         </p>
@@ -157,9 +153,6 @@
                             <a href="reserve.html">Reserve</a>
                         </p>
                         <p>
-                            <a href="calc.html">Price Calculator</a>
-                        </p>
-                        <p>
                             <a href="about.html">About</a>
                         </p>
                         <p>
@@ -168,10 +161,9 @@
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold">Contact</h6>
-                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" />
                         <p><i class="fas fa-home mr-3"></i> Eagan, MN 55123, US</p>
-                        <p><i class="fas fa-envelope mr-3"></i> aarcar@gmail.com</p>
+                        <p><i class="fas fa-envelope mr-3"></i> aarcar.bpa@gmail.com</p>
                         <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
                     </div>
                 </div>
@@ -179,12 +171,12 @@
         </section>
         <!-- Section: Links  -->
         <!-- 
-                <!-- Copyright
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2020 Copyright:
-                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                </div>
-                Copyright -->
+            <!-- Copyright
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            Copyright -->
     </footer>
 
     <!--JavaScript-->

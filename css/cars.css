@@ -1,12 +1,44 @@
+:root {
+    /* */
+    --dblue: rgb(40, 63, 103);
+    --bblue: rgb(76, 168, 223);
+    --dgblue: rgb(176, 198, 239);
+    /* */
+    --offwhite: rgb(230, 238, 251);
+    --white: rgb(249, 251, 254);
+    --gray: rgb(94, 110, 135);
+    /* */
+    --lblue: rgb(169, 217, 235);
+    /* */
+    /* --green: #1b746a; */
+    --green: rgb(22, 127, 169);
+}
+
 body {
-    background-color: #191919;
-    font-family: "Nunito", sans-serif;
-    padding-top: 80px;
-    margin: 0 auto;
+    background-color: var(--lblue);
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+}
+
+.row {
+    margin: 0;
 }
 
 nav {
-    background-color: white;
+    background-color: var(--dblue);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--offwhite);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(230, 238, 251)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border-color: var(--dblue);
 }
 
 .sm-icons {
@@ -19,16 +51,13 @@ nav {
     }
 }
 
-h1 {
-    color: azure;
-    font-weight: 100;
+#carHeading h1 {
+    font-weight: 300;
 }
 
-div p {
-    margin: 20px;
-    color: azure;
-    font-weight: 100;
-    font-size: 17px;
+#carHeading p {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .form-inputs {
@@ -98,15 +127,35 @@ div p {
     max-height: 180px;
 }
 
-/* FOOTER  */
+/* FOOTER */
 
-#footerLinks a {
-    color: rgb(125, 125, 125);
+footer {
+    background-color: var(--dblue);
+}
+
+#footerBanner {
+    background-color: var(--green);
+}
+
+#footerBanner div span,
+#footerBanner div a i {
+    color: var(--offwhite);
+}
+
+hr {
+    width: 60px;
+    background-color: var(--offwhite);
+    height: 2px;
 }
 
 footer section div div div h6,
 footer section div div div p,
 footer section div div div p a,
-p {
-    color: black;
+#footerLinks a {
+    /* color: rgb(125, 125, 125); */
+    color: var(--offwhite);
+}
+
+footer section div div div p a:hover {
+    color: var(--offwhite);
 }

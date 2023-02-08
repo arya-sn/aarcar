@@ -21,7 +21,8 @@ const cars = [
         exterior: 'White',
         interior: 'Red',
         engine: '4-cyl, Petrol, 2.5L',
-        transmission: 'Automatic'
+        transmission: 'Automatic',
+        bio: 'The 2019 Toyota Camry is a sedan made for the family. Providing with an automatic transmission and being a four-wheel drive type, it can coast along roads in order to make your drive more enjoyable.'
     },
     {
         id: 2,
@@ -37,7 +38,8 @@ const cars = [
         exterior: 'White',
         interior: 'Black',
         engine: '4-cyl, Gas, 2.5L',
-        transmission: 'Automatic'
+        transmission: 'Automatic',
+        bio: 'The 2020 Nissan Altima is a mid-sized sedan that prioritizes comfort and functionality with its state of the art features from its engine to its interior design.'
     },
     {
         id: 3,
@@ -53,7 +55,8 @@ const cars = [
         exterior: 'Gray',
         interior: 'Black',
         engine: '4-cyl, Gas, 2.0L',
-        transmission: 'Manual'
+        transmission: 'Manual',
+        bio: 'The 2022 Honda Civic is a compact car with a comfortable and modern design where drivers can utilize the benefits of its top of the line features and fresh comfort.'
     },
     {
         id: 4,
@@ -69,7 +72,8 @@ const cars = [
         exterior: 'White',
         interior: 'Brown',
         engine: '4-cyl, Gas, 2.0L',
-        transmission: 'Automatic'
+        transmission: 'Automatic',
+        bio: 'With top-notched grip, this SUV is willing to go across any terrain allowing for a road trip with your friends and/or family. The 2022 Jeep Wrangler is outfitted with technology that makes it be at the top of it game.'
     },
     {
         id: 5,
@@ -85,7 +89,8 @@ const cars = [
         exterior: 'Black',
         interior: 'Orange',
         engine: 'Twin-Turbo RB26DETT I6, 2.6L, Petrol',
-        transmission: 'Manual'
+        transmission: 'Manual',
+        bio: 'If you ever feel the need to cruise and speed along the streets, then look no further than the 2002 Nissan Skyline GTR. Despite it’s age, this monster of a car can drift along any corners smoothly with the help of it’s 2.6 L Twin-Turbo RB26DETT I6 engine and the best part is that it runs on petrol.'
     },
     {
         id: 6,
@@ -101,7 +106,8 @@ const cars = [
         exterior: 'Red',
         interior: 'Gray',
         engine: '6-cyl, Gas, 3.5L',
-        transmission: 'Automatic'
+        transmission: 'Automatic',
+        bio: 'The 2016 Toyota Tacoma TRD is a truck designed with safety and functionality as the main priority .The Tacoma is best known for its safety, keeping its drivers and passengers secure at all times. It also has a world class V-6 engine, making this the perfect truck for off roading.'
     },
     {
         id: 7,
@@ -117,7 +123,8 @@ const cars = [
         exterior: 'Orange',
         interior: 'Black',
         engine: '4-cyl, Turbo Gas, 1.5L',
-        transmission: 'Automatic'
+        transmission: 'Automatic',
+        bio: 'The  2017 Ford Escape Titanium is a compact SUV offering fuel saving driving as well as comfort and dynamic storage space. The SUV comfortably seats five while also having plenty of room for cargo. New with the 2017 is also its fuel-saving stop-start feature to make sure your car is eco-friendly.'
     }
 ]
 
@@ -131,8 +138,9 @@ for (let i = 0; i < cars.length; i++) {
     }
 }
 
-let mainInfoCode = `<p>${car.title}</p>
-<p>${car.strPrice}</p>`;
+let mainInfoCode = `<h1>${car.title}</h1>
+<h1>${car.strPrice}</h1>
+<p>${car.bio}</p>`;
 const mainInfo = document.querySelector(".main-info")
 mainInfo.innerHTML = mainInfoCode;
 
@@ -149,22 +157,72 @@ carousel.innerHTML = carouselCode + carousel.innerHTML;
 
 let highlightsCode = `<div class="row p-5">
 <div class="col-6">
-    <p class="text-white">Mileage: ${car.mileage}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="carbon:meter-alt" style="color: #283f68;" width="35"></iconify-icon>
+        </div>
+        <div class="col-9">
+            <p class="col-12">Mileage</p>
+            <p>${car.mileage}</p>
+        </div>
+    </div>
 </div>
 <div class="col-6">
-    <p class="text-white">Drive Type: ${car.driveType}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="mingcute:four-wheel-drive-fill" style="color: #283f68;" width="35">
+            </iconify-icon>
+        </div>
+        <div class="col-9">
+            <p>Drive Type</p>
+            <p>${car.driveType}</p>
+        </div>
+    </div>
 </div>
 <div class="col-6">
-    <p class="text-white">Exterior: ${car.exterior}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="mdi:car-hatchback" style="color: #283f68;" width="35"></iconify-icon>
+        </div>
+        <div class="col-9">
+            <p>Exterior</p>
+            <p>${car.exterior}</p>
+        </div>
+    </div>
 </div>
 <div class="col-6">
-    <p class="text-white">Interior: ${car.interior}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="mdi:car-door" style="color: #283f68;" width="35"></iconify-icon>
+        </div>
+        <div class="col-9">
+            <p>Interior</p>
+            <p>${car.interior}</p>
+        </div>
+    </div>
 </div>
 <div class="col-6">
-    <p class="text-white">Engine: ${car.engine}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="mingcute:engine-fill" style="color: #283f68;" width="35"></iconify-icon>
+        </div>
+        <div class="col-9">
+            <p>Engine</p>
+            <p>${car.engine}</p>
+        </div>
+    </div>
 </div>
 <div class="col-6">
-    <p class="text-white">Transmission: ${car.transmission}</p>
+    <div class="row">
+        <div class="col-3">
+            <iconify-icon icon="fluent:transmission-24-filled" style="color: #283f68;" width="35">
+            </iconify-icon>
+        </div>
+        <div class="col-9">
+            <p>Transmission</p>
+            <p>${car.transmission}</p>
+        </div>
+    </div>
 </div>
 </div>`
 const highlight = document.querySelector("#highlights")
@@ -196,15 +254,7 @@ $('#calc-btn').on('click', function (event) {
     let formInput = Array.from(document.querySelectorAll('#userInput input')).reduce((acc, input) => ({ ...acc, [input.id]: input.value }), {});
     console.log(formInput);
 
-    // let formInput = car.title;
-    // console.log(formInput);
     userInput.price = car.price;
-
-    // cars.forEach(function (car) {
-    //     if ($(`#${car.htmlID}`).is(":checked")) {
-    //         userInput.price = car.price;
-    //     }
-    // });
 
     userInput.principal = userInput.price - parseFloat(formInput.down);
     userInput.apr = parseFloat(formInput.apr);
@@ -225,10 +275,10 @@ $('#calc-btn').on('click', function (event) {
     calculations.tInterest = calculations.total - calculations.tLoan;
     console.log(calculations);
 
-    htmlCode2 = `<p class="text-white">Total Loan Amount = ${calculations.tLoan.toFixed(2)}</p>
-    <p class="text-white">Total Interest Amount = ${calculations.tInterest.toFixed(2)}</p>
-    <p class="text-white">Total Loan and Total Interest Amount = ${calculations.total.toFixed(2)}</p>
-    <p class="text-white">Total Monthly Payment = ${calculations.monthly.toFixed(2)}</p>`;
+    htmlCode2 = `<p>Total Loan Amount = ${calculations.tLoan.toFixed(2)}</p>
+    <p>Total Interest Amount = ${calculations.tInterest.toFixed(2)}</p>
+    <p>Total Loan and Total Interest Amount = ${calculations.total.toFixed(2)}</p>
+    <p>Total Monthly Payment = ${calculations.monthly.toFixed(2)}</p>`;
 
     document.querySelector(".car-calculations").innerHTML = htmlCode2;
 

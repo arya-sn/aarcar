@@ -1,12 +1,44 @@
-/* GENERAL STYLING */
+:root {
+    /* */
+    --dblue: rgb(40, 63, 103);
+    --bblue: rgb(76, 168, 223);
+    --dgblue: rgb(176, 198, 239);
+    /* */
+    --offwhite: rgb(230, 238, 251);
+    --white: rgb(249, 251, 254);
+    --gray: rgb(94, 110, 135);
+    /* */
+    --lblue: rgb(169, 217, 235);
+    /* */
+    /* --green: #1b746a; */
+    --green: rgb(22, 127, 169);
+}
+
 body {
-    font-family: "Nunito", sans-serif;
-    padding-top: 80px;
-    background-color: #191919;
+    background-color: var(--lblue);
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+}
+
+.row {
+    margin: 0;
 }
 
 nav {
-    background-color: white;
+    background-color: var(--dblue);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--offwhite);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(230, 238, 251)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border-color: var(--dblue);
 }
 
 .sm-icons {
@@ -19,14 +51,20 @@ nav {
     }
 }
 
+h1,
+p,
+h2,
+label {
+    color: var(--dblue);
+}
+
 .time-block:checked+label {
     background-color: rgb(71, 76, 79);
 }
 
 #reserveHeading h1,
 #reserveHeading p {
-    font-weight: 100;
-    color: rgb(255, 255, 255);
+    font-weight: 300;
 }
 
 #reserveHeading p {
@@ -242,39 +280,48 @@ ul.form-stepper li a .form-stepper-circle {
     cursor: default;
 }
 
-.personal-info {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
 
 .highlight {
     background: rgb(176, 176, 176);
 }
 
-.dateInput label {
-    color: #fff;
-}
-
-.timeInput p {
-    text-align: start;
-    color: #fff
+car-card {
+    width: 300px;
+    height: 330px;
 }
 
 
 /* FOOTER */
 
+footer {
+    background-color: var(--dblue);
+}
+
+#footerBanner {
+    background-color: var(--green);
+}
+
+#footerBanner div span,
+#footerBanner div a i {
+    color: var(--offwhite);
+}
+
+hr {
+    width: 60px;
+    background-color: var(--offwhite);
+    height: 2px;
+}
+
 footer section div div div h6,
 footer section div div div p,
 footer section div div div p a,
-p {
-    color: black;
+#footerLinks a {
+    /* color: rgb(125, 125, 125); */
+    color: var(--offwhite);
 }
 
-#footerLinks a {
-    color: rgb(125, 125, 125);
+footer section div div div p a:hover {
+    color: var(--offwhite);
 }
 
 /* CALENDAR */
