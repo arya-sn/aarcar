@@ -12,7 +12,7 @@ const cars = [
     {
         id: 3,
         carTitle: "Honda Civic",
-        carImage: "img/car/full/civic.png"
+        carImage: "img/car/full/civic.jpg"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const cars = [
         id: 6,
         htmlID: 'tacoma',
         carTitle: '2016 Toyota Tacoma TRD',
-        carImage: 'img/car/full/tacoma.jpeg'
+        carImage: 'img/car/full/tacoma.png'
     },
     {
         id: 7,

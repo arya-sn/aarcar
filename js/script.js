@@ -8,18 +8,18 @@ const cars = [
         htmlID: 'camry',
         title: '2018 Toyota Camry',
         color: 'Black',
-        price: '$15,000',
+        price: '$22,000',
         fullURL: 'img/car/full/camry.png',
         interiorURL: 'img/car/interior/camry.jpg'
     },
     {
         id: 2,
         htmlID: 'altima',
-        title: '2020 Nissan Altima',
-        color: 'White',
-        price: '$22,500',
+        title: '2015 Nissan Altima',
+        color: 'Black',
+        price: '$15,500',
         fullURL: 'img/car/full/altima.png',
-        interiorURL: 'img/car/interior/altima.png'
+        interiorURL: 'img/car/interior/altima.jpg'
     },
     {
         id: 3,
@@ -27,15 +27,15 @@ const cars = [
         title: '2022 Honda Civic',
         color: 'Black',
         price: '$22,500',
-        fullURL: 'img/car/full/civic.png',
-        interiorURL: 'img/car/interior/civic.jpg'
+        fullURL: 'img/car/full/civic.jpg',
+        interiorURL: 'img/car/interior/civic.jpeg'
     },
     {
         id: 4,
         htmlID: 'wrangler',
         title: 'Jeep Wrangler',
         color: 'White',
-        price: '$22,500',
+        price: '$31,000',
         fullURL: 'img/car/full/wrangler.png',
         interiorURL: 'img/car/interior/wrangler.png'
     },
@@ -44,7 +44,7 @@ const cars = [
         htmlID: 'skyline',
         title: '2017 Nissan Skyline GT-R',
         color: 'Black',
-        price: '$22,500',
+        price: '$90,000',
         fullURL: 'img/car/full/skyline.jpeg',
         interiorURL: 'img/car/interior/skyline.jpeg'
     },
@@ -53,8 +53,8 @@ const cars = [
         htmlID: 'tacoma',
         title: '2016 Toyota Tacoma TRD',
         color: 'Red',
-        price: '$22,500',
-        fullURL: 'img/car/full/tacoma.jpeg',
+        price: '$25,000',
+        fullURL: 'img/car/full/tacoma.png',
         interiorURL: 'img/car/interior/tacoma.jpeg'
     },
     {
@@ -62,7 +62,7 @@ const cars = [
         htmlID: 'titanium',
         title: '2017 Ford Escape Titanium',
         color: 'Orange',
-        price: '$22,500',
+        price: '$21,000',
         fullURL: 'img/car/full/titanium.jpg',
         interiorURL: 'img/car/interior/titanium.jpeg'
     }

@@ -71,6 +71,29 @@ nav {
     }
 }
 
+#carTitle {
+    margin-top: 60px;
+}
+
+#carPrice {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#carBio {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+#calcBtn {
+    overflow: visible !important;
+    background-color: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background-color: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background-color: -ms-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background-color: -o-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background-color: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+}
+
 .divider {
     height: 2px;
     width: 85%;

@@ -29,13 +29,13 @@ const cars = [
         htmlID: 'altima',
         title: '2020 Nissan Altima',
         color: 'White',
-        strPrice: '$22,500',
-        price: 22500,
+        strPrice: '$15,500',
+        price: 15500,
         fullURL: 'img/car/full/altima.png',
-        interiorURL: 'img/car/interior/altima.png',
+        interiorURL: 'img/car/interior/altima.jpg',
         mileage: '60k',
         driveType: 'Front Wheel Drive',
-        exterior: 'White',
+        exterior: 'Black',
         interior: 'Black',
         engine: '4-cyl, Gas, 2.5L',
         transmission: 'Automatic',
@@ -48,8 +48,8 @@ const cars = [
         color: 'Black',
         strPrice: '$22,500',
         price: 22500,
-        fullURL: 'img/car/full/civic.png',
-        interiorURL: 'img/car/interior/civic.jpg',
+        fullURL: 'img/car/full/civic.jpg',
+        interiorURL: 'img/car/interior/civic.jpeg',
         mileage: '15k',
         driveType: 'Front Wheel Drive',
         exterior: 'Gray',
@@ -63,8 +63,8 @@ const cars = [
         htmlID: 'wrangler',
         title: 'Jeep Wrangler',
         color: 'White',
-        strPrice: '$22,500',
-        price: 22500,
+        strPrice: '$31,000',
+        price: 31000,
         fullURL: 'img/car/full/wrangler.png',
         interiorURL: 'img/car/interior/wrangler.png',
         mileage: '90k',
@@ -80,8 +80,8 @@ const cars = [
         htmlID: 'skyline',
         title: '2017 Nissan Skyline GT-R',
         color: 'Black',
-        strPrice: '$22,500',
-        price: 22500,
+        strPrice: '$90,000',
+        price: 90000,
         fullURL: 'img/car/full/skyline.jpeg',
         interiorURL: 'img/car/interior/skyline.jpeg',
         mileage: '30k',
@@ -97,9 +97,9 @@ const cars = [
         htmlID: 'tacoma',
         title: '2016 Toyota Tacoma TRD',
         color: 'Red',
-        strPrice: '$22,500',
-        price: 22500,
-        fullURL: 'img/car/full/tacoma.jpeg',
+        strPrice: '$25,000',
+        price: 25000,
+        fullURL: 'img/car/full/tacoma.png',
         interiorURL: 'img/car/interior/tacoma.jpeg',
         mileage: '50k',
         driveType: 'Four-Wheel Drive',
@@ -114,8 +114,8 @@ const cars = [
         htmlID: 'titanium',
         title: '2017 Ford Escape Titanium',
         color: 'Orange',
-        strPrice: '$22,500',
-        price: 22500,
+        strPrice: '$21,000',
+        price: 21000,
         fullURL: 'img/car/full/titanium.jpg',
         interiorURL: 'img/car/interior/titanium.jpeg',
         mileage: '45k',
@@ -138,9 +138,9 @@ for (let i = 0; i < cars.length; i++) {
     }
 }
 
-let mainInfoCode = `<h1>${car.title}</h1>
-<h1>${car.strPrice}</h1>
-<p>${car.bio}</p>`;
+let mainInfoCode = `<h1 id="carTitle">${car.title}</h1>
+<h1 id="carPrice">${car.strPrice}</h1>
+<p id="carBio">${car.bio}</p>`;
 const mainInfo = document.querySelector(".main-info")
 mainInfo.innerHTML = mainInfoCode;
 

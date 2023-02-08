@@ -115,7 +115,8 @@ nav {
 }
 
 .card-button {
-    background-color: rgb(200, 200, 200)
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .carousel {
