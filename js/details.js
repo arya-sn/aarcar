@@ -231,7 +231,7 @@ highlight.innerHTML = highlightsCode;
 
 
 //calculations
-$('#calc-btn').on('click', function (event) {
+$('#calcBtn').on('click', function (event) {
     event.preventDefault();
 
     let htmlCode2 = ``;
@@ -256,7 +256,13 @@ $('#calc-btn').on('click', function (event) {
 
     userInput.price = car.price;
 
-    userInput.principal = userInput.price - parseFloat(formInput.down);
+    let finalDown = formInput.down
+
+    while (isNaN(parseFloat(finalDown))) {
+        finalDown = finalDown.substring(1);
+    }
+
+    userInput.principal = userInput.price - parseFloat(finalDown);
     userInput.apr = parseFloat(formInput.apr);
     userInput.loanTerm = parseInt(formInput.loanTerm);
 
