@@ -155,7 +155,11 @@ carousel.innerHTML = carouselCode + carousel.innerHTML;
 
 
 
-let highlightsCode = `<div class="row p-5">
+let highlightsCode = `<div class="row px-5 py-3">
+<div class="col-12">
+    <h1 class="extras-headings">Basics</h1>
+    <section class="extras-headings-divider"></section>
+</div>
 <div class="col-6">
     <div class="row">
         <div class="col-3">

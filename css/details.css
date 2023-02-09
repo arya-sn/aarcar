@@ -119,6 +119,23 @@ nav {
     margin-bottom: 21px;
 }
 
+.extras-headings {
+    font-size: 20px;
+    text-align: center;
+}
+
+.extras-headings-divider {
+    height: 2px;
+    width: 50px;
+    margin: auto;
+    background-color: var(--dblue);
+    margin-bottom: 30px;
+}
+
+#calc-divider {
+    width: 140px;
+}
+
 .not-generated {
     font-weight: 300;
 }
