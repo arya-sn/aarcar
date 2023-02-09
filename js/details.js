@@ -162,8 +162,8 @@ let highlightsCode = `<div class="row p-5">
             <iconify-icon icon="carbon:meter-alt" style="color: #283f68;" width="35"></iconify-icon>
         </div>
         <div class="col-9">
-            <p class="col-12">Mileage</p>
-            <p>${car.mileage}</p>
+            <p class="not-generated">Mileage:</p>
+            <p class="generated">${car.mileage}</p>
         </div>
     </div>
 </div>
@@ -174,19 +174,20 @@ let highlightsCode = `<div class="row p-5">
             </iconify-icon>
         </div>
         <div class="col-9">
-            <p>Drive Type</p>
-            <p>${car.driveType}</p>
+            <p class="not-generated">Drivetrain:</p>
+            <p class="generated">${car.driveType}</p>
         </div>
     </div>
 </div>
+<section class="highlights-divider"></section>
 <div class="col-6">
     <div class="row">
         <div class="col-3">
             <iconify-icon icon="mdi:car-hatchback" style="color: #283f68;" width="35"></iconify-icon>
         </div>
         <div class="col-9">
-            <p>Exterior</p>
-            <p>${car.exterior}</p>
+            <p class="not-generated">Exterior:</p>
+            <p class="generated">${car.exterior}</p>
         </div>
     </div>
 </div>
@@ -196,19 +197,20 @@ let highlightsCode = `<div class="row p-5">
             <iconify-icon icon="mdi:car-door" style="color: #283f68;" width="35"></iconify-icon>
         </div>
         <div class="col-9">
-            <p>Interior</p>
-            <p>${car.interior}</p>
+            <p class="not-generated">Interior:</p>
+            <p class="generated">${car.interior}</p>
         </div>
     </div>
 </div>
+<section class="highlights-divider"></section>
 <div class="col-6">
     <div class="row">
         <div class="col-3">
             <iconify-icon icon="mingcute:engine-fill" style="color: #283f68;" width="35"></iconify-icon>
         </div>
         <div class="col-9">
-            <p>Engine</p>
-            <p>${car.engine}</p>
+            <p class="not-generated">Engine:</p>
+            <p class="generated">${car.engine}</p>
         </div>
     </div>
 </div>
@@ -219,8 +221,8 @@ let highlightsCode = `<div class="row p-5">
             </iconify-icon>
         </div>
         <div class="col-9">
-            <p>Transmission</p>
-            <p>${car.transmission}</p>
+            <p class="not-generated">Transmission:</p>
+            <p class="generated">${car.transmission}</p>
         </div>
     </div>
 </div>
@@ -233,6 +235,21 @@ highlight.innerHTML = highlightsCode;
 //calculations
 $('#calcBtn').on('click', function (event) {
     event.preventDefault();
+
+    let formInput = Array.from(document.querySelectorAll('#userInput input')).reduce((acc, input) => ({ ...acc, [input.id]: input.value }), {});
+    console.log(formInput);
+
+    if (formInput.down == "") {
+        formInput.down = 0;
+    }
+
+    if (formInput.apr == "") {
+        formInput.apr = 0;
+    }
+
+    if (formInput.loanTerm == "") {
+        formInput.loanTerm = 0;
+    }
 
     let htmlCode2 = ``;
 
@@ -250,9 +267,6 @@ $('#calcBtn').on('click', function (event) {
         total: 0,
         monthly: 0
     }
-
-    let formInput = Array.from(document.querySelectorAll('#userInput input')).reduce((acc, input) => ({ ...acc, [input.id]: input.value }), {});
-    console.log(formInput);
 
     userInput.price = car.price;
 
@@ -281,10 +295,10 @@ $('#calcBtn').on('click', function (event) {
     calculations.tInterest = calculations.total - calculations.tLoan;
     console.log(calculations);
 
-    htmlCode2 = `<p>Total Loan Amount = ${calculations.tLoan.toFixed(2)}</p>
-    <p>Total Interest Amount = ${calculations.tInterest.toFixed(2)}</p>
-    <p>Total Loan and Total Interest Amount = ${calculations.total.toFixed(2)}</p>
-    <p>Total Monthly Payment = ${calculations.monthly.toFixed(2)}</p>`;
+    htmlCode2 = `<p>Total Loan Amount = $${calculations.tLoan.toFixed(2)}</p>
+    <p>Total Interest Amount = $${calculations.tInterest.toFixed(2)}</p>
+    <p>Total Loan and Total Interest Amount = $${calculations.total.toFixed(2)}</p>
+    <p>Total Monthly Payment = $${calculations.monthly.toFixed(2)}</p>`;
 
     document.querySelector(".car-calculations").innerHTML = htmlCode2;
 
